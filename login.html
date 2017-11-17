@@ -2,15 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/script.js"></script>
 </head>
 
-<body>
+<body onload="demoDisplay('l')">
     <div id="container">
-        <div id="login-container">
-            <form>
+
+        <div id="tabbox">
+            <div id="login" onclick="demoDisplay('l');" class="tab select">Login</div>
+            <div id="signup" onclick="demoDisplay('r');" class="tab register">Register</div>
+        </div>
+
+        <div id="login-panel">
+            <form id="loginbox">
                 Username
                 <input type="text" id="username" name="username" id="username">
                 <br> Password
@@ -20,6 +27,21 @@
                 <h4>Forgot Password?</h4>
             </form>
         </div>
+
+        <div id="register-panel">
+            <form id="register">
+                Username
+                <input type="text" id="username" name="username" id="username">
+                <br>Email
+                <input type="text" id="email" name="email" id="email">
+                <br> Password
+                <input type="password" id="pwd" name="pwd" id="pwd">
+                <br>Confrim password
+                <input type="confrim-password" id="cpwd" name="cpwd" id="cpwd">
+                <input type="button" id="register-button" value="Register">
+            </form>
+        </div>
+
     </div>
 </body>
 
