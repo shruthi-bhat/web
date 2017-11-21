@@ -10,43 +10,42 @@
 
 <body onload="demoDisplay('l')">
     <div id="container">
-<div id ="full">
-
-        <div id="tabbox">
-            <div id="login" onclick="demoDisplay('l');" class="tab select">Login</div>
-            <div id="signup" onclick="demoDisplay('r');" class="tab register">Register</div>
+        <div id="full">
+            <table class="tabbox">
+                <tr>
+                    <td id="login" onclick="demoDisplay('l');" class="tab select">Login</td>
+                    <td id="signup" onclick="demoDisplay('r');" class="tab register">Register</td>
+                </tr>
+            </table>
+            <div id="login-panel">
+                <form id="loginbox">
+                    Username
+                    <input type="text" id="username" name="username" id="username">
+                    <br> Password
+                    <input type="password" id="pwd" name="pwd" id="pwd">
+                    <br>
+                    <input type="button" id="login-button" value="Login">
+                    <h4>Forgot Password?</h4>
+                </form>
+            </div>
+            <div id="register-panel">
+                <form name="registers" id="register">
+                    Username
+                    <input type="text" id="username" name="user" id="username" value="">
+                    <div id="validation_user"></div>
+                    <br>Email
+                    <input type="text" id="email" name="emailId" id="email" value="">
+                    <div id="validation_email"></div>
+                    <br> Password
+                    <input type="password" id="pwd" name="password" id="pwd" value="">
+                    <div id="validation_pass"></div>
+                    <br>Confrim password
+                    <input type="confrim-password" id="cpwd" name="conpwd" id="cpwd" value="">
+                    <div id="validation_cpass"></div>
+                    <input type="button" id="register-button" onclick="registration();" value="Register">
+                </form>
+            </div>
         </div>
-        <div id="login-panel">
-            <form id="loginbox">
-                Username
-                <input type="text" id="username" name="username" id="username">
-                <br> Password
-                <input type="password" id="pwd" name="pwd" id="pwd">
-                <br>
-                <input type="button" id="login-button" value="Login">
-                <h4>Forgot Password?</h4>
-            </form>
-        </div>
-
-        <div id="register-panel">
-            <form name="registers" id="register">
-
-                Username
-                <input type="text" id="username"  name="user" id="username" value="">
-               <div id="validation_user"></div>
-                <br>Email
-                <input type="text" id="email" name="emailId" id="email" value="">
-                <div id="validation_email"></div>
-                <br> Password
-                <input type="password" id="pwd" name="password" id="pwd" value="">
-                <div id="validation_pass"></div>
-                <br>Confrim password
-                <input type="confrim-password" id="cpwd" name="conpwd" id="cpwd" value="">
-                <div id="validation_cpass"></div>
-                <input type="button" id="register-button" onclick="registration();" value="Register">
-            </form>
-        </div>
-</div>
     </div>
 </body>
 
