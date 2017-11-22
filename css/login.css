@@ -1,166 +1,121 @@
-body {
-    background-image: url("../image/mountain.jpg");
+ body {
+     background-image: url("../image/mountain.jpg");
+ }
+
+
+ #full {
+     height: 300px;
+     width: 300px;
+     position: absolute;
+     margin: -150px 0 0 -150px;
+     left: 47%;
+     top: 50%;
+ }
+
+ #loginbox,
+ #register {
+
+     min-height: 200px;
+     padding: 10px;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+     color: white;
+     width: 320px;
+ }
+
+ #username,
+ #pwd,
+ #cpwd,
+ #email {
+     width: 100%;
+     padding: 1px 1px;
+     margin: 2px 1px;
+     border: none;
+     border-bottom: 0.5px solid white;
+     color: white;
+     background-color: transparent;
+ }
+
+ #login-button,
+ #register-button {
+     width: 100%;
+     background-color: #ef547e;
+     border: none;
+     color: white;
+     padding: 15px 30px;
+     text-align: center;
+     font-size: 16px;
+     margin: 25px 1px;
+     cursor: pointer;
+ }
+
+ h4 {
+     text-align: center;
+     color: white;
+ }
+
+input:focus {
+    outline: none;
 }
+ .tab {
 
-#full {
-    margin: 100px 500px;
-}
-
-#loginbox,
-#register {
-
-    min-height: 200px;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    color: white;
-    width: 320px;
-}
-
-#username,
-#pwd,
-#cpwd,
-#email {
-    width: 100%;
-    padding: 1px 1px;
-    margin: 2px 1px;
-    border: none;
-    border-bottom: 0.5px solid white;
-    color: white;
-    background-color: transparent;
-}
-
-#login-button,
-#register-button {
-    width: 100%;
-    background-color: #ef547e;
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 16px;
-    margin: 25px 1px;
-    cursor: pointer;
-}
-
-h4 {
-    text-align: center;
-    color: white;
-}
-
-.tab {
-
-    background: #dedede;
-    height: 40px;
-    padding-right: 118px;
-    text-align: center;
-    font-weight: bold;
-    border-radius: 4px 4px 0px 0px;
-}
+     background: #dedede;
+     height: 40px;
+     padding-right: 118px;
+     text-align: center;
+     font-weight: bold;
+     border-radius: 4px 4px 0px 0px;
+ }
 
 
-#validation_user,
-#validation_email,
-#validation_pass,
-#validation_cpass {
-    color: #ef547e;
-}
+ #validation_user,
+ #validation_email,
+ #validation_pass,
+ #validation_cpass {
+     color: #ef547e;
+ }
 
-@media only screen and (min-width: 980px) and (max-width: 1200px) {
-    #full {
-        margin: 100px 500px;
-    }
+ @media only screen and (min-width: 980px) and (max-width: 1200px) {
+     #full {
+         height: 300px;
+         width: 300px;
+         position: absolute;
+         margin: -150px 0 0 -150px;
+         left: 47%;
+         top: 50%;
+     }
+ }
 
-    .tab {
-        background: #dedede;
-        height: 40px;
-        padding-right: 118px;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 4px 4px 0px 0px;
-    }
-}
+ @media only screen and (min-width: 768px) and (max-width: 979px) {
+     #full {
+         height: 300px;
+         width: 300px;
+         position: absolute;
+         margin: -150px 0 0 -150px;
+         left: 47%;
+         top: 50%;
+     }
+ }
 
-@media only screen and (min-width: 768px) and (max-width: 979px) {
-    #full {
-        margin: 100px 300px;
-    }
+ @media only screen and (min-width: 481px) and (max-width: 767px) {
+     #full {
+         height: 300px;
+         width: 300px;
+         position: absolute;
+         margin: -150px 0 0 -150px;
+         left: 47%;
+         top: 50%;
+     }
+ }
 
-    .tab {
-        background: #dedede;
-        height: 40px;
-        padding-right: 118px;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 4px 4px 0px 0px;
-    }
-}
+ @media only screen and (max-width: 480px) {
+     #full {
+         height: 300px;
+         width: 300px;
+         position: absolute;
+         margin: -150px 0 0 -150px;
+         left: 47%;
+         top: 50%;
+     }
+ }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    #full {
-        margin: 100px 110px;
-    }
-    #loginbox,
-    #register {
-        min-height: 200px;
-        padding: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: white;
-        width: 250px;
-    }
 
-    .tab {
-        background: #dedede;
-        height: 40px;
-        padding-right: 83px;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 4px 4px 0px 0px;
-    }
-}
-
-@media only screen and (max-width: 480px) {
-    #full {
-        margin: 100px 75px;
-    }
-    #loginbox,
-    #register {
-        min-height: 200px;
-        padding: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: white;
-        width: 200px;
-    }
-
-    .tab {
-        background: #dedede;
-        height: 40px;
-        padding-right: 58px;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 4px 4px 0px 0px;
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    #full {
-        margin: 100px 0px;
-    }
-
-    #loginbox,
-    #register {
-        min-height: 200px;
-        padding: 10px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-        color: white;
-        width: 200px;
-    }
-
-    .tab {
-        background: #dedede;
-        height: 40px;
-        padding-right: 58px;
-        text-align: center;
-        font-weight: bold;
-        border-radius: 4px 4px 0px 0px;
-    }
-}
